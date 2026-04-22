@@ -1,0 +1,48 @@
+<article [class]="'group relative bg-card rounded-2xl border border-border overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col ' + (className || '')">
+  <!-- Badge -->
+  <span *ngIf="product.badge" class="absolute top-3 left-3 z-10 bg-primary text-primary-foreground text-xs font-semibold px-2 py-1 rounded-full">
+    {{product.badge}}
+  </span>
+
+
+  <!-- Image -->
+  <a [routerLink]="['/products', product.id]" class="block overflow-hidden bg-surface">
+    <img *ngIf="hasValidImage()" [src]="getImageUrl()" [alt]="product.name" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+    <div *ngIf="!hasValidImage()" class="w-full h-48 bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center">
+      <span class="text-5xl">📦</span>
+    </div>
+  </a>
+
+  <!-- Info -->
+  <div class="flex flex-col flex-1 p-4 gap-2">
+    <span class="text-xs text-muted-foreground uppercase tracking-wide font-medium">
+      {{product.category || product.categoryName || 'Product'}}
+    </span>
+    <a [routerLink]="['/products', product.id]">
+      <h3 class="font-semibold text-foreground leading-snug line-clamp-2 hover:text-primary transition-colors">
+        {{product.name}}
+      </h3>
+    </a>
+    <div class="flex items-center gap-2 mt-auto">
+      <app-rating-stars [rating]="product.rating || 0"></app-rating-stars>
+      <span class="text-xs text-muted-foreground">({{product.stock ?? 0}} in stock)</span>
+    </div>
+    <div class="flex items-center justify-between mt-1">
+      <div class="flex items-center gap-2">
+        <span class="text-lg font-bold text-foreground">TND {{product.price.toFixed(2)}}</span>
+        <span *ngIf="product.originalPrice" class="text-sm text-muted-foreground line-through">
+          ${{product.originalPrice.toFixed(2)}}
+        </span>
+        <span *ngIf="discount" class="text-xs font-semibold text-green-600 bg-green-50 px-1.5 py-0.5 rounded">
+          -{{discount}}%
+        </span>
+      </div>
+    </div>
+    <button (click)="onAddToCart()" [disabled]="!isInStock()" [class]="'mt-2 flex items-center justify-center gap-2 w-full py-2 rounded-xl text-sm font-semibold transition-all duration-200 ' + (isInStock() ? 'bg-primary text-primary-foreground hover:bg-[#0284c7] active:scale-95' : 'bg-muted text-muted-foreground cursor-not-allowed')">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+      </svg>
+      {{isInStock() ? 'Add to Cart' : 'Out of Stock'}}
+    </button>
+  </div>
+</article>
