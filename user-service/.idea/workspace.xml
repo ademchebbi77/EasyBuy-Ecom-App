@@ -5,21 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db40bbf0-7b36-4967-a722-454d314dd5f0" name="Changes" comment="user-service">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/tn/esprit/spring/config/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/tn/esprit/spring/config/ErrorResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/tn/esprit/spring/config/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/User/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/config/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/user/controller/ConfigTestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/user/dto/OrderEventDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/user/dto/OrderEventDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/user/messaging/OrderConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/user/messaging/OrderConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User/src/main/java/tn/esprit/spring/user/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/User/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApiGatewayDemo/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../category-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config-server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../eurekaserverdemo/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../order-service/Order/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../payment-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../product-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../review-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EasyBuy Front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../EasyBuy Front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../category-service/data/categorydb.lock.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -69,30 +69,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/MSI/Desktop/easy buy user&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/user/Documents/GitHub/microservices/EasyBuy-Ecom-App/user-service/User",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\GitHub\microservices\EasyBuy-Ecom-App\user-service\User" />
+      <recent name="C:\Users\user\Documents\GitHub\microservices\EasyBuy-Ecom-App\user-service" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="UserServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="user-service (1)" />
@@ -112,8 +119,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+        <option value="bundled-jdk-30f59d01ecdd-cffe25b9f5b3-intellij.indexing.shared.core-IU-253.28294.334" />
+        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-IU-253.28294.334" />
       </set>
     </attachedChunks>
   </component>
@@ -141,6 +148,7 @@
       <workItem from="1776786681924" duration="3291000" />
       <workItem from="1776803945700" duration="6212000" />
       <workItem from="1776850041160" duration="11584000" />
+      <workItem from="1776885575122" duration="7298000" />
     </task>
     <task id="LOCAL-00001" summary="user-service">
       <option name="closed" value="true" />
