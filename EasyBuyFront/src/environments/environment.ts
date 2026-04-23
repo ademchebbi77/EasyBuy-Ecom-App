@@ -2,13 +2,13 @@ export const environment = {
   production: false,
   apiGateway: 'http://localhost:8087',
   
-  // Keycloak OAuth 2.0 Configuration
+  // Mock authentication (no Keycloak) - using user-service mock endpoint
   keycloak: {
-    url: 'http://localhost:8080',
+    url: 'http://localhost:8087',
     realm: 'EcommerceRealm',
     clientId: 'gateway',
     clientSecret: 'xLrWX0ulXElEl4UR9J5RMt5B21G4a2uz',
-    tokenEndpoint: 'http://localhost:8080/realms/EcommerceRealm/protocol/openid-connect/token'
+    tokenEndpoint: 'http://localhost:8087/user-service/api/auth/token'
   },
   
   // All services accessed through API Gateway

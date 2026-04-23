@@ -23,11 +23,10 @@ public class SecurityConfig {
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .csrf(ServerHttpSecurity.CsrfSpec::disable)
                 .authorizeExchange(exchange -> exchange
-                        .pathMatchers("/eureka/**").permitAll()
-                        .anyExchange().authenticated()
+                        .anyExchange().permitAll()  // TEMPORARILY DISABLED AUTH FOR TESTING
                 )
-                .oauth2ResourceServer(oauth -> oauth
-                        .jwt(Customizer.withDefaults()))
+                // .oauth2ResourceServer(oauth -> oauth
+                //         .jwt(Customizer.withDefaults()))  // COMMENTED OUT - NO KEYCLOAK
                 .build();
     }
 

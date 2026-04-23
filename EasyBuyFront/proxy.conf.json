@@ -1,30 +1,30 @@
 {
   "/products-service": {
-    "target": "http://localhost:8080",
+    "target": "http://localhost:8087",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug"
   },
   "/cart-service": {
-    "target": "http://localhost:8080",
+    "target": "http://localhost:8087",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug"
   },
   "/orders-service": {
-    "target": "http://localhost:8080",
+    "target": "http://localhost:8087",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug"
   },
   "/auth-service": {
-    "target": "http://localhost:8080",
+    "target": "http://localhost:8087",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug"
   },
   "/users-service": {
-    "target": "http://localhost:8080",
+    "target": "http://localhost:8087",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug"

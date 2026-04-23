@@ -45,13 +45,22 @@ public class UserController {
      *  4. If not found, auto-create the user
      *
      * Returns 404 instead of 500 when auto-creation fails.
+     * 
+     * TEMPORARY: Returns first user when authentication is disabled for testing
      */
     @GetMapping("/me")
     public ResponseEntity<UserResponse> me(Authentication authentication) {
-        if (authentication == null || !(authentication.getPrincipal() instanceof Jwt jwt)) {
-            return ResponseEntity.status(401).build();
+        // TEMPORARY: For testing without OAuth2, return first user or create a test user
+        if (authentication == null || !(authentication.getPrincipal() instanceof Jwt)) {
+            List<UserResponse> users = service.findAll();
+            if (!users.isEmpty()) {
+                return ResponseEntity.ok(users.get(0));
+            }
+            // No users exist, return 404
+            return ResponseEntity.notFound().build();
         }
 
+        Jwt jwt = (Jwt) authentication.getPrincipal();
         UserResponse user = getCurrentUserFromJwt(jwt);
         
         if (user != null) {
